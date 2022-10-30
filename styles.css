@@ -1,0 +1,90 @@
+.inputQ{
+    width: 30vw;
+    height: 30px;
+    font-size: 24px;
+    border-radius: 15px;
+}
+.inputS{
+    font-weight: bold; 
+    margin-left: 30%;
+    width: 200px;
+    height: 50px;
+}
+
+#form{
+    margin-top: 20px;
+}
+
+#flex-box{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    background-color: black;
+    justify-items: flex-end; 
+    padding: 20px; 
+}
+span>a {
+    text-decoration: none;
+    color:rgb(241, 241, 241);
+    font: bold 18px Verdana, Send-Serif;
+    padding:20px;
+}
+#flex-center{
+    display:flex;
+    height:50em;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center; 
+    padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+/* Default table styles for this demo */
+table {
+    display:block;
+    width: 60%;
+    border-collapse: collapse;
+    text-align: left;
+    /* justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content:space-around; */
+}
+
+table tr {
+    background: white;
+    border: 1px solid;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid;
+    flex: 0 0 200px;
+    background-color: aqua;
+}
+
+/* Simple CSS for flexbox table on mobile */
+@media(max-width: 800px) {
+    table thead {
+        left: -9999px;
+        position: absolute;
+        visibility: hidden;
+    }
+    table tr {
+        border-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+    table td {
+        border: 1px solid;
+        margin: 0 -1px -1px 0;
+        width: 50%;
+    }
+}
