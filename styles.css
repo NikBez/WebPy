@@ -1,12 +1,61 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content:space-between;
+    align-content: center;
+    grid-template-areas:
+    "t t t"
+    "l m r";      
+}  
+
+.grid-container .top {
+    align-content: stretch;
+} 
+
+.top {
+    grid-area: t;
+    background-color: rgba(0, 0, 0, 0.631);
+    height: 50px;
+    line-height: 50px;
+    text-align:right;
+}
+
+.top span a {
+    text-decoration: none;
+    color:rgb(241, 241, 241);
+    font: bold 16px Verdana, Send-Serif;
+    padding:10px;
+}
+.test {
+    padding: 10px;
+    background-color: brown;
+    font-size: 12px;
+    width: 50px;
+}
+
+.left-side {
+    grid-area: l;
+}
+.main {
+    margin-top: 3in;
+    grid-area: m;
+    justify-self: center;
+   
+}
+.right-side {
+    grid-area: r;
+}
+
 .inputQ{
-    width: 30vw;
+    width: 7in;
     height: 30px;
     font-size: 24px;
     border-radius: 15px;
 }
 .inputS{
     font-weight: bold; 
-    margin-left: 30%;
+    text-align: center;
+    margin-left: 2.4in;
     width: 200px;
     height: 50px;
 }
@@ -15,76 +64,13 @@
     margin-top: 20px;
 }
 
-#flex-box{
-    display:flex;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    background-color: black;
-    justify-items: flex-end; 
-    padding: 20px; 
-}
-span>a {
-    text-decoration: none;
-    color:rgb(241, 241, 241);
-    font: bold 18px Verdana, Send-Serif;
-    padding:20px;
-}
-#flex-center{
-    display:flex;
-    height:50em;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center; 
-    padding: 20px;
-}
-
 * {
     box-sizing: border-box;
   }
-
-/* Default table styles for this demo */
-table {
-    display:block;
-    width: 60%;
-    border-collapse: collapse;
-    text-align: left;
-    /* justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    align-content:space-around; */
+.logo {
+    text-align: center;
 }
 
-table tr {
-    background: white;
-    border: 1px solid;
-}
-
-table th, table td {
-    padding: 10px;
-    border: 1px solid;
-    flex: 0 0 200px;
-    background-color: aqua;
-}
-
-/* Simple CSS for flexbox table on mobile */
-@media(max-width: 800px) {
-    table thead {
-        left: -9999px;
-        position: absolute;
-        visibility: hidden;
-    }
-    table tr {
-        border-bottom: 0;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-bottom: 40px;
-    }
-    table td {
-        border: 1px solid;
-        margin: 0 -1px -1px 0;
-        width: 50%;
-    }
+.hidden {
+    display: none;
 }
